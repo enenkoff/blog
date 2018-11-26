@@ -29,6 +29,7 @@ var postcss = require('gulp-postcss'),
 
 var path = {
     build: {
+        root: '../',                                /* path to ready htmls */
         html: '../views/',                                /* path to ready htmls */
         js: '../views/assets/js/',                        /* path to ready js */
         css: '../views/assets/css/',                      /* path to ready css */
@@ -53,7 +54,7 @@ var path = {
         js: 'src/js/**/*.js',                             /* path for watch js files */
         style: 'src/sass/**/*.scss'                       /* path for watch sass files */
     },
-    clean: '../views'                                     /* path for browsersync directory */
+    clean: '../'                                     /* path for browsersync directory */
 };
 
 
@@ -130,6 +131,7 @@ gulp.task('builder:html', ['img'], function () {
     gulp.src(path.src.html_pages)
         .pipe(include())
         .pipe(gulp.dest(path.build.html))
+        .pipe(gulp.dest(path.build.root))
         .pipe(browserSync.reload({stream: true}));
 });
 
