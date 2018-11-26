@@ -32,7 +32,7 @@ var path = {
         html: '../views/',                                /* path to ready htmls */
         js: '../views/assets/js/',                        /* path to ready js */
         css: '../views/assets/css/',                      /* path to ready css */
-        img: '../views/assets/images/',                   /* path to ready images */
+        img: '../views/uploads/',                         /* path to ready images */
         media: '../views/assets/media/',                  /* path to ready media-files */
         svg: '../views/assets/svg/',                      /* path to ready svg */
         fonts: '../views/assets/fonts/'                   /* path to ready fonts */
@@ -46,7 +46,7 @@ var path = {
         html_templates: 'src/_code/templates/',           /* path to source html all files */
         html_pages: 'src/_code/pages/*.html',             /* path to source html page-files */
         sass: 'src/sass/**/*.+(sass|scss)',               /* path to source sass files */
-        img: 'src/images/**/*.+(jpg|jpeg|png|gif)'        /* path to source images files */
+        img: 'src/_code/pages/uploads/**/*.+(jpg|jpeg|png|gif)' /* path to source images files */
     },
     watch: {
         html: 'src/_code/**/*.html',                      /* path for watch html files */
@@ -126,7 +126,7 @@ gulp.task('fonts', function(){
 
 /* builders */
 
-gulp.task('builder:html', function () {
+gulp.task('builder:html', ['img'], function () {
     gulp.src(path.src.html_pages)
         .pipe(include())
         .pipe(gulp.dest(path.build.html))
@@ -185,6 +185,6 @@ gulp.task('watch', ['svg', 'builder:css', 'builder:html', 'builder:js', 'browser
 
 /* dafault tasks */
 
-gulp.task('default',function () {
+gulp.task('default', function () {
     gulp.run('watch');
 });
