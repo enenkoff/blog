@@ -31,8 +31,8 @@ var path = {
     build: {
         root: '../',                                /* path to ready htmls */
         html: '../views/',                                /* path to ready htmls */
-        js: '../views/assets/js/',                        /* path to ready js */
-        css: '../views/assets/css/',                      /* path to ready css */
+        js: '../assets/js/',                        /* path to ready js */
+        css: '../assets/css/',                      /* path to ready css */
         img: '../views/uploads/',                         /* path to ready images */
         media: '../views/assets/media/',                  /* path to ready media-files */
         svg: '../views/assets/svg/',                      /* path to ready svg */
@@ -47,7 +47,7 @@ var path = {
         html_templates: 'src/_code/templates/',           /* path to source html all files */
         html_pages: 'src/_code/pages/*.html',             /* path to source html page-files */
         sass: 'src/sass/**/*.+(sass|scss)',               /* path to source sass files */
-        img: 'src/_code/pages/uploads/**/*.+(jpg|jpeg|png|gif)' /* path to source images files */
+        img: 'src/_code/pages/views/uploads/**/*.+(jpg|jpeg|png|gif)' /* path to source images files */
     },
     watch: {
         html: 'src/_code/**/*.html',                      /* path for watch html files */
