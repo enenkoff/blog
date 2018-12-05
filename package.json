@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "gulp package",
   "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "enenkoff",
   "license": "ISC",
+  "scripts": {
+    "dev": "webpack-dev-server --hot --open",
+    "build": "webpack"
+  },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
     "browser-sync": "^2.18.12",
@@ -26,11 +27,18 @@
     "gulp-stylefmt": "^1.1.0",
     "gulp-svgstore": "^6.1.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-uglifyjs": "^0.6.2"
+    "gulp-uglifyjs": "^0.6.2",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
+    "css-loader": "^1.0.0",
+    "webpack": "^4.20.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
     "bower": "^1.8.4",
     "css-mqpacker": "^6.0.1",
-    "stylefmt": "^6.0.0"
+    "stylefmt": "^6.0.0",
+    "vue": "^2.5.17"
   }
 }

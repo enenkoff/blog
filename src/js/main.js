@@ -15,6 +15,3 @@
 
 // scripts
 //= partials/scripts.js
-
-// vue scripts
-//= vue/app.js
