@@ -1,28 +1,38 @@
-var path = require('path');
-const VueLoaderPlugin = require('vue-loader/lib/plugin'); // плагин для загрузки кода Vue
+var webpack = require('webpack');
 
 module.exports = {
-    entry: 'src/js/vue/app.js',
+    entry: [
+        './src/js/app.js'
+    ],
     output: {
-        path: path.resolve(__dirname, '../assets/js'),
-        publicPath: '../',
-        filename: 'build.js'
+        path: "/assets/js",
+        publicPath: "",
+        filename: "app.js"
     },
+    watch: true,
     module: {
-        rules: [
+        loaders: [
+            {
+                test: /\.js$/,
+                // excluding some local linked packages.
+                // for normal use cases only node_modules is needed.
+                exclude: /node_modules|vue\/src|vue-router\//,
+                loader: 'babel'
+            },
             {
                 test: /\.vue$/,
-                loader: 'vue-loader'
-            }, {
-                test: /\.css$/,
-                use: [
-                    'vue-style-loader',
-                    'css-loader'
-                ]
+                loader: 'vue'
             }
         ]
     },
-    plugins: [
-        new VueLoaderPlugin()
-    ]
-};
+    babel: {
+        presets: ['es2015'],
+        plugins: ['transform-runtime']
+    },
+    resolve: {
+        modulesDirectories: ['node_modules'],
+        alias: {
+            'vue$': 'vue/dist/vue.common.js'
+        }
+    }
+}

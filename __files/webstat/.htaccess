@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/blog.enenkoff.com/webstat"
+AuthUserFile /var/www/chenenk4672/data/etc/25057185.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>
