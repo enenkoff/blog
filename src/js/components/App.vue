@@ -1,8 +1,14 @@
 <template>
     <div id="wrapper">
-        <page-header></page-header>
-        <main>Main</main>
-        <page-footer></page-footer>
+        <div class="container">
+            <page-header></page-header>
+            <div id="main" class="main">
+                <div class="content content--sm">
+                    <blog></blog>
+                </div>
+            </div>
+            <page-footer></page-footer>
+        </div>
     </div>
 </template>
 
@@ -17,6 +23,7 @@
         components: {
             pageHeader: require('./layout/Header.vue'),
             pageFooter: require('./layout/Footer.vue'),
+            blog: require('./blog/Listing.vue'),
         }
     }
 </script>

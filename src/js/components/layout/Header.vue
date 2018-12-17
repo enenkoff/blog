@@ -1,6 +1,10 @@
 <template>
     <header id="header" class="header">
-        header
+        <div class="content content--lg">
+            <div class="header--main">
+
+            </div>
+        </div>
     </header>
 </template>
 

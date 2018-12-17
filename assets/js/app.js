@@ -11632,7 +11632,7 @@
 	__vue_exports__ = __webpack_require__(7)
 
 	/* template */
-	var __vue_template__ = __webpack_require__(14)
+	var __vue_template__ = __webpack_require__(20)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -11682,6 +11682,12 @@
 	//
 	//
 	//
+	//
+	//
+	//
+	//
+	//
+	//
 
 	exports.default = {
 	    name: 'app',
@@ -11693,7 +11699,8 @@
 
 	    components: {
 	        pageHeader: __webpack_require__(8),
-	        pageFooter: __webpack_require__(11)
+	        pageFooter: __webpack_require__(11),
+	        blog: __webpack_require__(14)
 	    }
 	};
 
@@ -11756,6 +11763,10 @@
 	//
 	//
 	//
+	//
+	//
+	//
+	//
 
 	exports.default = {
 	    name: "Header"
@@ -11766,13 +11777,19 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _vm._m(0)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('header', {
 	    staticClass: "header",
 	    attrs: {
 	      "id": "header"
 	    }
-	  }, [_vm._v("\n    header\n")])
-	},staticRenderFns: []}
+	  }, [_c('div', {
+	    staticClass: "content content--lg"
+	  }, [_c('div', {
+	    staticClass: "header--main"
+	  })])])
+	}]}
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -11854,7 +11871,7 @@
 	    attrs: {
 	      "id": "footer"
 	    }
-	  }, [_vm._v("\n    header\n")])
+	  }, [_vm._v("\n    footer\n")])
 	},staticRenderFns: []}
 	if (false) {
 	  module.hot.accept()
@@ -11867,12 +11884,667 @@
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+
+	/* script */
+	__vue_exports__ = __webpack_require__(15)
+
+	/* template */
+	var __vue_template__ = __webpack_require__(19)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "F:\\StormFiles\\my_blog\\src\\js\\components\\blog\\Listing.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-79f63060", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-79f63060", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] Listing.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+
+	module.exports = __vue_exports__
+
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+
+	exports.default = {
+	    name: "BlogListing",
+	    data: function data() {
+	        return {
+	            items: [{
+	                link: 'https://calendar.perfplanet.com/2018/performance-anti-patterns-base64-encoding/',
+	                imgSrc: 'Swift_Performance_Tips.jpeg',
+	                en: true,
+	                labels: ['CSS', 'Performance', 'Images'],
+	                articleTitle: 'Performance Anti-Patterns: Base64 Encoding',
+	                articleDescr: 'Влияние кодировки base-64 на перфоманс',
+	                date: '17.12.18'
+	            }, {
+	                link: 'http://blog.csssr.ru/2018/12/05/lint-your-css',
+	                imgSrc: 'How-linting-and-ESLint-improve.jpeg',
+	                en: false,
+	                labels: ['CSS', 'PostCSS'],
+	                articleTitle: 'Безболезненный линтинг CSS с помощью stylelint',
+	                articleDescr: 'Стандарты написания кода и подключения линтеров на проект',
+	                date: '17.12.18'
+	            }, {
+	                link: 'https://blogs.dropbox.com/tech/2017/12/improving-document-preview-performance/',
+	                imgSrc: 'Dropbox.logo_1.jpg',
+	                en: true,
+	                labels: ['Performance'],
+	                articleTitle: 'Improving Document Preview Performance',
+	                articleDescr: 'Загрузка превью файла в дропбоксе',
+	                date: '17.12.18'
+	            }, {
+	                link: 'http://css-live.ru/css/pravilnaya-shpargalka-po-css-kaskadu.html',
+	                imgSrc: 'spor_functijns2.jpeg',
+	                en: false,
+	                labels: ['CSS', 'Clear code'],
+	                articleTitle: 'Правильная шпаргалка по CSS-каскаду',
+	                articleDescr: 'Как правильно писать каскадные стили',
+	                date: '17.12.18'
+	            }, {
+	                link: 'https://blog.sheddow.xyz/css-timing-attack/',
+	                imgSrc: '6759.jpg',
+	                en: true,
+	                labels: ['CSS', 'JavaScript'],
+	                articleTitle: 'A timing attack with CSS selectors and Javascript',
+	                articleDescr: 'Как прочитать практически любую строку из HTML атакуемого сайта с помощью CSS-селекторов и JavaScript.',
+	                date: '17.12.18'
+	            }, {
+	                link: 'https://www.smashingmagazine.com/2018/11/interactive-infographic-vue-js/',
+	                imgSrc: 'Lightpainting-animation-june2016.jpg',
+	                en: true,
+	                labels: ['Vue', 'JavaScript'],
+	                articleTitle: 'Building An Interactive Infographic With Vue.js',
+	                articleDescr: 'Анимационная инфографика для vue.js',
+	                date: '17.12.18'
+	            }, {
+	                link: 'https://blog.cloudflare.com/fast-google-fonts-with-cloudflare-workers/',
+	                imgSrc: '2016-03-17fonts.jpg',
+	                en: true,
+	                labels: ['Fonts', 'Google Fonts', 'Performance'],
+	                articleTitle: 'Fast Google Fonts with Cloudflare Workers',
+	                articleDescr: 'Как избежать медленной загрузки гугловских шрифтов',
+	                date: '17.12.18'
+	            }, {
+	                link: 'https://medium.com/@egonelbre/psychology-of-code-readability-d23b1ff1258a',
+	                imgSrc: 'header-pic.jpg',
+	                en: true,
+	                labels: ['Clear code'],
+	                articleTitle: 'Psychology of Code Readability',
+	                articleDescr: 'Психология чтения кода',
+	                date: '17.12.18'
+	            }]
+	        };
+	    },
+
+	    components: {
+	        blogArticle: __webpack_require__(16)
+	    }
+	};
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+
+	/* script */
+	__vue_exports__ = __webpack_require__(17)
+
+	/* template */
+	var __vue_template__ = __webpack_require__(18)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "F:\\StormFiles\\my_blog\\src\\js\\components\\blog\\Item.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-b3ef2812", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-b3ef2812", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] Item.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+
+	module.exports = __vue_exports__
+
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+
+	exports.default = {
+	    name: "Item",
+	    props: {
+	        link: {
+	            required: true,
+	            type: String
+	        },
+	        imgSrc: {
+	            required: true,
+	            type: String
+	        },
+	        en: {
+	            required: true,
+	            type: Boolean
+	        },
+	        labels: {
+	            required: true,
+	            type: Array
+	        },
+	        articleTitle: {
+	            required: true,
+	            type: String
+	        },
+	        articleDescr: {
+	            required: true,
+	            type: String
+	        },
+	        createDate: {
+	            required: true,
+	            type: String
+	        }
+	    }
+	};
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('a', {
+	    attrs: {
+	      "href": this.link,
+	      "target": "_blank",
+	      "rel": "nofollow"
+	    }
+	  }, [_c('div', {
+	    staticClass: "image"
+	  }, [_c('figure', [_c('img', {
+	    attrs: {
+	      "src": 'assets/images/uploads/' + this.imgSrc,
+	      "alt": "Chrome Dev Tools"
+	    }
+	  }), _vm._v(" "), _c('div', {
+	    staticClass: "lang"
+	  }, [(_vm.en) ? _c('span', [_vm._v("EN")]) : _c('span', [_vm._v("RU")])])])]), _vm._v(" "), _c('section', [_c('div', {
+	    staticClass: "labels"
+	  }, [_vm._l((_vm.labels), function(label) {
+	    return _c('span', [_vm._v(_vm._s(label))])
+	  })], 2), _vm._v(" "), _c('h3', {
+	    staticClass: "title"
+	  }, [_vm._v(_vm._s(_vm.articleTitle))]), _vm._v(" "), _c('div', {
+	    staticClass: "descr"
+	  }, [_vm._v(_vm._s(_vm.articleDescr))]), _vm._v(" "), _c('div', {
+	    staticClass: "date"
+	  }, [_vm._v(_vm._s(_vm.createDate))])])])
+	},staticRenderFns: []}
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-hot-reload-api").rerender("data-v-b3ef2812", module.exports)
+	  }
+	}
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('div', {
+	    staticClass: "blog"
+	  }, [_c('ul', [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _vm._m(5), _vm._v(" "), _vm._m(6), _vm._v(" "), _vm._l((this.items), function(item) {
+	    return [_c('li', [_c('blog-article', {
+	      attrs: {
+	        "link": item.link,
+	        "imgSrc": item.imgSrc,
+	        "en": item.en,
+	        "labels": item.labels,
+	        "articleTitle": item.articleTitle,
+	        "articleDescr": item.articleDescr,
+	        "createDate": item.date
+	      }
+	    })], 1)]
+	  })], 2)])
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('li', [_c('a', {
+	    attrs: {
+	      "href": "https://medium.com/@egonelbre/psychology-of-code-readability-d23b1ff1258a",
+	      "target": "_blank",
+	      "rel": "nofollow"
+	    }
+	  }, [_c('div', {
+	    staticClass: "image"
+	  }, [_c('figure', [_c('img', {
+	    attrs: {
+	      "src": "assets/images/uploads/454-292-Apple_Swift.jpg",
+	      "alt": "smashing_logo"
+	    }
+	  }), _vm._v(" "), _c('div', {
+	    staticClass: "lang"
+	  }, [_c('span', [_vm._v("EN")])])])]), _vm._v(" "), _c('section', [_c('div', {
+	    staticClass: "labels"
+	  }, [_c('span', [_vm._v("Best Practices")])]), _vm._v(" "), _c('h3', {
+	    staticClass: "title"
+	  }, [_vm._v("Psychology of Code Readability")]), _vm._v(" "), _c('div', {
+	    staticClass: "descr"
+	  }, [_vm._v("Психология читабельного кода")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('li', [_c('a', {
+	    attrs: {
+	      "href": "https://htmlacademy.ru/blog/371-flexbox-use-cases",
+	      "target": "_blank",
+	      "rel": "nofollow"
+	    }
+	  }, [_c('div', {
+	    staticClass: "image"
+	  }, [_c('figure', [_c('img', {
+	    attrs: {
+	      "src": "assets/images/uploads/htmlAcademyLogo.png",
+	      "alt": "smashing_logo"
+	    }
+	  }), _vm._v(" "), _c('div', {
+	    staticClass: "lang"
+	  }, [_c('span', [_vm._v("RU")])])])]), _vm._v(" "), _c('section', [_c('div', {
+	    staticClass: "labels"
+	  }, [_c('span', [_vm._v("CSS")]), _vm._v(" "), _c('span', [_vm._v("FlexBox")])]), _vm._v(" "), _c('h3', {
+	    staticClass: "title"
+	  }, [_vm._v("Примеры использования флексбоксов")]), _vm._v(" "), _c('div', {
+	    staticClass: "descr"
+	  }, [_vm._v("Размышления, для чего на самом деле стоит применять флексы")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('li', [_c('a', {
+	    attrs: {
+	      "href": "https://www.smashingmagazine.com/2018/08/flexbox-display-flex-container/",
+	      "target": "_blank",
+	      "rel": "nofollow"
+	    }
+	  }, [_c('div', {
+	    staticClass: "image"
+	  }, [_c('figure', [_c('img', {
+	    attrs: {
+	      "src": "assets/images/uploads/smashing-logo.png",
+	      "alt": "smashing_logo"
+	    }
+	  }), _vm._v(" "), _c('div', {
+	    staticClass: "lang"
+	  }, [_c('span', [_vm._v("EN")])])])]), _vm._v(" "), _c('section', [_c('div', {
+	    staticClass: "labels"
+	  }, [_c('span', [_vm._v("CSS")]), _vm._v(" "), _c('span', [_vm._v("FlexBox")])]), _vm._v(" "), _c('h3', {
+	    staticClass: "title"
+	  }, [_vm._v("What Happens When You Create A Flexbox Flex Container?")]), _vm._v(" "), _c('div', {
+	    staticClass: "descr"
+	  }, [_vm._v("Что происходит, когда мы создаем ФлексБокс")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('li', [_c('a', {
+	    attrs: {
+	      "href": "https://habr.com/post/332572/",
+	      "target": "_blank",
+	      "rel": "nofollow"
+	    }
+	  }, [_c('div', {
+	    staticClass: "image"
+	  }, [_c('figure', [_c('img', {
+	    attrs: {
+	      "src": "assets/images/uploads/CSS_Grid-Layout.png",
+	      "alt": "css grid layout"
+	    }
+	  }), _vm._v(" "), _c('div', {
+	    staticClass: "lang"
+	  }, [_c('span', [_vm._v("RU")])])])]), _vm._v(" "), _c('section', [_c('div', {
+	    staticClass: "labels"
+	  }, [_c('span', [_vm._v("CSS")]), _vm._v(" "), _c('span', [_vm._v("Grid Layout")])]), _vm._v(" "), _c('h3', {
+	    staticClass: "title"
+	  }, [_vm._v("Правда ли уже пора использовать CSS Grid Layout?")]), _vm._v(" "), _c('div', {
+	    staticClass: "descr"
+	  }, [_vm._v("Зачем использовать гриды")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('li', [_c('a', {
+	    attrs: {
+	      "href": "http://css-live.ru/faq/prokachivaem-navyki-otladki-s-pomoshhyu-instrumentov-razrabotchika-chrome-chast-1.html",
+	      "target": "_blank",
+	      "rel": "nofollow"
+	    }
+	  }, [_c('div', {
+	    staticClass: "image"
+	  }, [_c('figure', [_c('img', {
+	    attrs: {
+	      "src": "assets/images/uploads/improve-your-debugging-skills-with-chrome-devtools_870x220.png",
+	      "alt": "Chrome Dev Tools"
+	    }
+	  }), _vm._v(" "), _c('div', {
+	    staticClass: "lang"
+	  }, [_c('span', [_vm._v("RU")])])])]), _vm._v(" "), _c('section', [_c('div', {
+	    staticClass: "labels"
+	  }, [_c('span', [_vm._v("Chrome")]), _vm._v(" "), _c('span', [_vm._v("DevTools")])]), _vm._v(" "), _c('h3', {
+	    staticClass: "title"
+	  }, [_vm._v("Прокачиваем навыки отладки с помощью инструментов разработчика Chrome (часть 1)")]), _vm._v(" "), _c('div', {
+	    staticClass: "descr"
+	  }, [_vm._v("Приёмы и советы по использованию отладчика Chrome")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('li', [_c('a', {
+	    attrs: {
+	      "href": "http://css-live.ru/faq/prokachivaem-navyki-otladki-s-pomoshhyu-instrumentov-razrabotchika-chrome-chast-2.html",
+	      "target": "_blank",
+	      "rel": "nofollow"
+	    }
+	  }, [_c('div', {
+	    staticClass: "image"
+	  }, [_c('figure', [_c('img', {
+	    attrs: {
+	      "src": "assets/images/uploads/improve-your-debugging-skills-with-chrome-devtools_870x220.png",
+	      "alt": "Chrome Dev Tools"
+	    }
+	  }), _vm._v(" "), _c('div', {
+	    staticClass: "lang"
+	  }, [_c('span', [_vm._v("RU")])])])]), _vm._v(" "), _c('section', [_c('div', {
+	    staticClass: "labels"
+	  }, [_c('span', [_vm._v("Chrome")]), _vm._v(" "), _c('span', [_vm._v("DevTools")])]), _vm._v(" "), _c('h3', {
+	    staticClass: "title"
+	  }, [_vm._v("Прокачиваем навыки отладки с помощью инструментов разработчика Chrome (часть 2)")]), _vm._v(" "), _c('div', {
+	    staticClass: "descr"
+	  }, [_vm._v("Продвинутые функции отладчика Chrome")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('li', [_c('a', {
+	    attrs: {
+	      "href": "https://habr.com/company/mailru/blog/340922/.com[perevod]-obyasnyaem-sovremennyy-javascri",
+	      "target": "_blank",
+	      "rel": "nofollow"
+	    }
+	  }, [_c('div', {
+	    staticClass: "image"
+	  }, [_c('figure', [_c('img', {
+	    attrs: {
+	      "src": "assets/images/uploads/dinosaur.jpg",
+	      "alt": "Chrome Dev Tools"
+	    }
+	  }), _vm._v(" "), _c('div', {
+	    staticClass: "lang"
+	  }, [_c('span', [_vm._v("RU")])])])]), _vm._v(" "), _c('section', [_c('div', {
+	    staticClass: "labels"
+	  }, [_c('span', [_vm._v("JavaScript")])]), _vm._v(" "), _c('h3', {
+	    staticClass: "title"
+	  }, [_vm._v("Объясняем современный JavaScript динозавру")]), _vm._v(" "), _c('div', {
+	    staticClass: "descr"
+	  }, [_vm._v("Развитие инструментов в JavaScript вплоть до 2017-го")])])])])
+	}]}
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-hot-reload-api").rerender("data-v-79f63060", module.exports)
+	  }
+	}
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    attrs: {
 	      "id": "wrapper"
 	    }
-	  }, [_c('page-header'), _vm._v(" "), _c('main', [_vm._v("Main")]), _vm._v(" "), _c('page-footer')], 1)
+	  }, [_c('div', {
+	    staticClass: "container"
+	  }, [_c('page-header'), _vm._v(" "), _c('div', {
+	    staticClass: "main",
+	    attrs: {
+	      "id": "main"
+	    }
+	  }, [_c('div', {
+	    staticClass: "content content--sm"
+	  }, [_c('blog')], 1)]), _vm._v(" "), _c('page-footer')], 1)])
 	},staticRenderFns: []}
 	if (false) {
 	  module.hot.accept()

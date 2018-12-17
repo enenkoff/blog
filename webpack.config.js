@@ -9,13 +9,11 @@ module.exports = {
         publicPath: "",
         filename: "app.js"
     },
-    watch: true,
+    watch: false,
     module: {
         loaders: [
             {
                 test: /\.js$/,
-                // excluding some local linked packages.
-                // for normal use cases only node_modules is needed.
                 exclude: /node_modules|vue\/src|vue-router\//,
                 loader: 'babel'
             },
