@@ -271,6 +271,17 @@
                         articleDescr: 'Психология чтения кода',
                         date: '17.12.18',
                     },
+                    {
+                        link: 'https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/',
+                        imgSrc: 'EOA_MediaQueriesNEW_Blog.jpg',
+                        en: true,
+                        labels: [
+                            'CSS',
+                        ],
+                        articleTitle: 'Using Feature Queries in CSS',
+                        articleDescr: 'Медиа-запросы в CSS',
+                        date: '10.12.18',
+                    },
                 ],
             };
         },
